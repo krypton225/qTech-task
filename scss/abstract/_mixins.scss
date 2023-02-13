@@ -1,0 +1,133 @@
+@mixin prefixing($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin prefixing-values($prop, $value) {
+    #{$prop}: -webkit-#{$value};
+    #{$prop}: -moz-#{$value};
+    #{$prop}: -ms-#{$value};
+    #{$prop}: -o-#{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin breakpoint($point) {
+    @if $point == tablet {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @if $point == mobile {
+        @media only screen and (max-width: 576px) {
+            @content;
+        }
+    }
+
+    @if $point == large {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+@mixin grid-columns($columns-number) {
+    display: grid;
+    grid-template-columns: repeat($columns-number, 1fr);
+}
+
+@mixin flex-start-row {
+    @include prefixing(display, flex);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-end-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, flex-end);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-around-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, space-around);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-evenly-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, space-evenly);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-center-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, center);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-center-column {
+    @include flex-center-row;
+    @include prefixing(flex-direction, column);
+}
+
+@mixin flex-between-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, space-between);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-between-column {
+    @include flex-between-row;
+    @include prefixing(flex-direction, column);
+}
+
+@mixin fade($type) {
+    @if $type == "hide" {
+        visibility: hidden;
+        opacity: 0;
+    } @else if $type == "show" {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@mixin reset-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin hero-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include prefixing(transform, translate(-50%, -50%));
+}
+
+@mixin transition($prop, $time, $func, $delaying) {
+    @if $func == ease {
+        @include prefixing(transition, $prop #{$time}s ease #{$delaying}s);
+    } @else if $func == ease-in {
+        @include prefixing(transition, $prop #{$time}s ease-in #{$delaying}s);
+    } @else if $func == ease-in-out {
+        @include prefixing(transition, $prop #{$time}s ease-in-out #{$delaying}s);
+    } @else if $func == ease-out {
+        @include prefixing(transition, $prop #{$time}s ease-out #{$delaying}s);
+    } @else if $func == linear {
+        @include prefixing(transition, $prop #{$time}s linear #{$delaying}s);
+    }
+}
+
+@mixin fading-transition($time, $func) {
+    @include prefixing(transition, visibility);
+    @include prefixing(transition, opacity);
+    transition: visibility #{$time}s #{$func}, opacity #{$time}s #{$func};
+}
+
+@mixin center-x {
+  display: block;
+  @include prefixing(margin-inline, auto);
+}

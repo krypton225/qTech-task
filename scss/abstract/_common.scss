@@ -1,0 +1,33 @@
+ul {
+    list-style-type: none;
+}
+
+section {
+    width: 100%;
+    padding: 12rem 0;
+}
+
+a {
+    text-decoration: none;
+
+    &:active,
+    &:focus {
+        background: transparent !important;
+        outline: none !important;
+        border: none !important;
+        text-decoration: none !important;
+        box-shadow: none !important;
+        @include prefixing(user-select, none);
+    }
+}
+
+.container {
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+
+    @each $screen-width, $container-width in $main-widths {
+        @media (min-width: $screen-width) {
+            width: $container-width;
+        }
+    }
+}

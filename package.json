@@ -1,0 +1,22 @@
+{
+  "name": "qtech-task",
+  "version": "1.0.0",
+  "description": "Task of qTech company",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krypton225/qTech-task.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "watch": "sass --no-source-map --watch scss:css/main.css"
+  },
+  "author": "Khaled Mohamed",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}

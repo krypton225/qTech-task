@@ -12,11 +12,6 @@ a {
 
     &:active,
     &:focus {
-        background: transparent !important;
-        outline: none !important;
-        border: none !important;
-        text-decoration: none !important;
-        box-shadow: none !important;
         @include prefixing(user-select, none);
     }
 }

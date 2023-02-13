@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 999999;
 
     &__content {
         width: 100%;
@@ -17,14 +18,15 @@
             @include flex-center-row;
             border-bottom-left-radius: var(--logo-border-radius);
             border-bottom-right-radius: var(--logo-border-radius);
-            background-color: #ff11ee; //TODO: bg
+            background-color: #FFF;
 
             @media (max-width: 768px) {
                 width: 10rem;
                 height: 10rem;
             }
 
-            picture source, picture img {
+            picture source,
+            picture img {
                 width: 65%;
                 display: block;
                 margin-inline: auto;
@@ -34,7 +36,6 @@
                     width: 60%;
                 }
             }
-
         }
 
         &__list {
@@ -76,6 +77,11 @@
                     display: block;
                     padding-block: 1rem;
                     font-size: 1.7rem;
+                    color: white;
+
+                    @include breakpoint(tablet) {
+                        color: $color-black;
+                    }
 
                     &::before {
                         content: "";
@@ -85,7 +91,6 @@
                         right: 0;
                         bottom: -0.3rem;
                         background-color: $color-orange;
-                        // TODO: color
                         @include fade(hide);
                         @include fading-transition(0.34, ease-in);
                     }

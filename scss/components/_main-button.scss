@@ -1,0 +1,25 @@
+.main-btn {
+    min-width: 14rem;
+    width: 23rem;
+    padding: 1.4rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    @include flex-center-row;
+    background-color: $color-blue-dark;
+    color: white;
+    font-size: 1.4rem;
+    @include transition(background-color, 0.35, ease-in, 0);
+
+    @include breakpoint(tablet) {
+        margin-inline: auto;
+    }
+
+    &:hover {
+        background-color: $color-blue-light;
+    }
+
+    &:focus,
+    &:active {
+        background-color: $color-blue-dark;
+    }
+}

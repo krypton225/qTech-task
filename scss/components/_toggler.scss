@@ -16,7 +16,7 @@
         border-radius: 2rem;
         height: 0.3rem;
         display: block;
-        background-color: $color-black;
+        background-color: lighten($color-black, 80%);
         @include transition();
 
         &[class^="toggle-"] {
@@ -25,14 +25,17 @@
 
         &.toggle-rotation-clockwise {
             transform: rotate(-45deg) translate(-0.4rem, 0.9rem);
+            background-color: $color-black;
         }
 
         &.toggle-rotation-not-clockwise {
             transform: rotate(45deg) translate(-0.5rem, -0.9rem);
+            background-color: $color-black;
         }
 
         &.toggle-fade {
             transform: translateX(-2rem);
+            background-color: $color-black;
             @include fade("hide");
         }
     }

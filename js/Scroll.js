@@ -1,4 +1,22 @@
 const Scroll = (function () {
+    function goTop(elementID = "") {
+        if (elementID === undefined || elementID === "") {
+            throw new SyntaxError("goTop function must call with elementID parameter");
+        }
+
+        if (elementID === null) {
+            throw new Error("There is no such id in the DOM");
+        }
+
+        const goTopElement = document.getElementById(elementID);
+
+        window.addEventListener("scroll", function () {
+            goTopElement.classList.toggle("shown", window.scrollY > 120);
+        });
+
+        goTopElement.addEventListener("click", () => window.scrollTo(0, 0));
+    }
+
     function changeBackgroundLinesWhenScrolling(elements = []) {
         if (elements.length === 0 || elements === undefined) {
             throw new Error("You must pass elements of array as parameter when calling toggleClassesInLines()");
@@ -24,7 +42,8 @@ const Scroll = (function () {
     changeBackgroundLinesWhenScrolling(document.querySelectorAll("#navbar-toggler span"));
 
     return {
-        init: setNavbarSticky
+        init: setNavbarSticky,
+        goTop
     };
 })();
 

@@ -361,11 +361,11 @@ a:active, a:focus {
   top: 0;
   right: 0;
   z-index: 999999;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -ms-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: background-color 0.5s ease-out 0s;
+  -moz-transition: background-color 0.5s ease-out 0s;
+  -ms-transition: background-color 0.5s ease-out 0s;
+  -o-transition: background-color 0.5s ease-out 0s;
+  transition: background-color 0.5s ease-out 0s;
 }
 .navbar.sticky-scroll {
   background-color: white;

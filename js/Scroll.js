@@ -7,7 +7,7 @@ const Scroll = (function () {
         const navbar = document.getElementById(navbarID);
 
         window.addEventListener("scroll", function () {
-            navbar.classList.toggle("sticky-scroll", window.scrollY > 250);
+            navbar.classList.toggle("sticky-scroll", window.scrollY > 50);
         });
     }
 

@@ -485,7 +485,7 @@ a:active, a:focus {
   }
 }
 .navbar__content__list-item {
-  margin-inline-end: 6rem;
+  margin-inline: 3rem;
 }
 @media only screen and (max-width: 992px) {
   .navbar__content__list-item {

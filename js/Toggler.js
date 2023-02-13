@@ -8,7 +8,7 @@ const Toggler = (function () {
     }
 
     function toggleClassesInLines(elements = []) {
-        if (elements.length === 0) {
+        if (elements.length === 0 || elements === undefined) {
             throw new Error("You must pass elements of array as parameter when calling toggleClassesInLines()");
         }
 

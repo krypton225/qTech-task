@@ -19,6 +19,10 @@
         background-color: lighten($color-black, 80%);
         @include transition();
 
+        &.active {
+            background-color: $color-black;
+        }
+
         &[class^="toggle-"] {
             @include transition();
         }

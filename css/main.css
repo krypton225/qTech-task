@@ -604,6 +604,9 @@ a:active, a:focus {
   -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
+.toggler span.active {
+  background-color: #414648;
+}
 .toggler span[class^=toggle-] {
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;

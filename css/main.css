@@ -16,7 +16,7 @@ html {
 body {
   height: 2000px;
   margin: 0;
-  font-family: "Cairo", sans-serif;
+  font-family: "Tajawal", sans-serif !important;
 }
 body::-webkit-scrollbar {
   width: 0.5rem;
@@ -243,77 +243,54 @@ template {
   font-size: 7.32rem;
 }
 
-/* cairo-200 - latin */
 @font-face {
-  font-family: "Cairo", sans-serif;
-  font-style: normal;
   font-display: swap;
+  font-family: "Tajawal";
+  font-style: normal;
   font-weight: 200;
-  src: url("../fonts/cairo-v22-latin-200.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/cairo-v22-latin-200.eot?#iefix") format("embedded-opentype"), url("../fonts/cairo-v22-latin-200.woff2") format("woff2"), url("../fonts/cairo-v22-latin-200.woff") format("woff"), url("../fonts/cairo-v22-latin-200.ttf") format("truetype"), url("../fonts/cairo-v22-latin-200.svg#Cairo") format("svg"); /* Legacy iOS */
+  src: url("../fonts/Tajawal-Black.ttf") format("truetype");
 }
-/* cairo-300 - latin */
 @font-face {
-  font-family: "Cairo", sans-serif;
-  font-style: normal;
   font-display: swap;
+  font-family: "Tajawal";
+  font-style: normal;
   font-weight: 300;
-  src: url("../fonts/cairo-v22-latin-300.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/cairo-v22-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/cairo-v22-latin-300.woff2") format("woff2"), url("../fonts/cairo-v22-latin-300.woff") format("woff"), url("../fonts/cairo-v22-latin-300.ttf") format("truetype"), url("../fonts/cairo-v22-latin-300.svg#Cairo") format("svg"); /* Legacy iOS */
+  src: url("../fonts/Tajawal-Bold.ttf") format("truetype");
 }
-/* cairo-regular - latin */
 @font-face {
-  font-family: "Cairo", sans-serif;
-  font-style: normal;
   font-display: swap;
+  font-family: "Tajawal";
+  font-style: normal;
   font-weight: 400;
-  src: url("../fonts/cairo-v22-latin-regular.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/cairo-v22-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/cairo-v22-latin-regular.woff2") format("woff2"), url("../fonts/cairo-v22-latin-regular.woff") format("woff"), url("../fonts/cairo-v22-latin-regular.ttf") format("truetype"), url("../fonts/cairo-v22-latin-regular.svg#Cairo") format("svg"); /* Legacy iOS */
+  src: url("../fonts/Tajawal-ExtraBold.ttf") format("truetype");
 }
-/* cairo-500 - latin */
 @font-face {
-  font-family: "Cairo", sans-serif;
-  font-style: normal;
   font-display: swap;
-  font-weight: 500;
-  src: url("../fonts/cairo-v22-latin-500.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/cairo-v22-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/cairo-v22-latin-500.woff2") format("woff2"), url("../fonts/cairo-v22-latin-500.woff") format("woff"), url("../fonts/cairo-v22-latin-500.ttf") format("truetype"), url("../fonts/cairo-v22-latin-500.svg#Cairo") format("svg"); /* Legacy iOS */
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Tajawal-ExtraLight.ttf") format("truetype");
 }
-/* cairo-600 - latin */
 @font-face {
-  font-family: "Cairo", sans-serif;
-  font-style: normal;
   font-display: swap;
-  font-weight: 600;
-  src: url("../fonts/cairo-v22-latin-600.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/cairo-v22-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/cairo-v22-latin-600.woff2") format("woff2"), url("../fonts/cairo-v22-latin-600.woff") format("woff"), url("../fonts/cairo-v22-latin-600.ttf") format("truetype"), url("../fonts/cairo-v22-latin-600.svg#Cairo") format("svg"); /* Legacy iOS */
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Tajawal-Light.ttf") format("truetype");
 }
-/* cairo-700 - latin */
 @font-face {
-  font-family: "Cairo", sans-serif;
-  font-style: normal;
   font-display: swap;
-  font-weight: 700;
-  src: url("../fonts/cairo-v22-latin-700.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/cairo-v22-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/cairo-v22-latin-700.woff2") format("woff2"), url("../fonts/cairo-v22-latin-700.woff") format("woff"), url("../fonts/cairo-v22-latin-700.ttf") format("truetype"), url("../fonts/cairo-v22-latin-700.svg#Cairo") format("svg"); /* Legacy iOS */
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Tajawal-Medium.ttf") format("truetype");
 }
-/* cairo-800 - latin */
 @font-face {
-  font-family: "Cairo", sans-serif;
-  font-style: normal;
   font-display: swap;
-  font-weight: 800;
-  src: url("../fonts/cairo-v22-latin-800.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/cairo-v22-latin-800.eot?#iefix") format("embedded-opentype"), url("../fonts/cairo-v22-latin-800.woff2") format("woff2"), url("../fonts/cairo-v22-latin-800.woff") format("woff"), url("../fonts/cairo-v22-latin-800.ttf") format("truetype"), url("../fonts/cairo-v22-latin-800.svg#Cairo") format("svg"); /* Legacy iOS */
-}
-/* cairo-900 - latin */
-@font-face {
-  font-family: "Cairo", sans-serif;
+  font-family: "Tajawal";
   font-style: normal;
-  font-display: swap;
-  font-weight: 900;
-  src: url("../fonts/cairo-v22-latin-900.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/cairo-v22-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/cairo-v22-latin-900.woff2") format("woff2"), url("../fonts/cairo-v22-latin-900.woff") format("woff"), url("../fonts/cairo-v22-latin-900.ttf") format("truetype"), url("../fonts/cairo-v22-latin-900.svg#Cairo") format("svg"); /* Legacy iOS */
+  font-weight: 400;
+  src: url("../fonts/Tajawal-Regular.ttf") format("truetype");
 }
 ul {
   list-style-type: none;

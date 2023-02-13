@@ -8,6 +8,7 @@
     background-color: $color-blue-dark;
     color: white;
     font-size: 1.4rem;
+    font-weight: 500;
     @include transition(background-color, 0.35, ease-in, 0);
 
     @include breakpoint(tablet) {

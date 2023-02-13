@@ -743,6 +743,7 @@ a:active, a:focus {
   background-color: #010061;
   color: white;
   font-size: 1.4rem;
+  font-weight: 500;
   -webkit-transition: background-color 0.35s ease-in 0s;
   -moz-transition: background-color 0.35s ease-in 0s;
   -ms-transition: background-color 0.35s ease-in 0s;
@@ -928,4 +929,93 @@ a:active, a:focus {
 }
 .message__content__header__card-info__desc {
   font-size: 1.8rem;
+}
+.message__content__footer {
+  width: 100%;
+  padding-top: 13rem;
+}
+.message__content__footer__title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.message__content__footer__title a {
+  text-decoration: underline;
+}
+.message__content__footer__layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-top: 10rem;
+}
+@media only screen and (max-width: 992px) {
+  .message__content__footer__layout {
+    margin-inline: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.message__content__footer__layout__first__desc {
+  width: 85%;
+  margin-top: 5rem;
+  line-height: 1.7;
+  font-size: 1.44rem;
+  font-weight: 500;
+  color: #010061;
+}
+@media only screen and (max-width: 992px) {
+  .message__content__footer__layout__first__desc {
+    width: 100%;
+    text-align: center;
+  }
+}
+.message__content__footer__layout__second {
+  width: 100%;
+}
+.message__content__footer__layout__second img {
+  width: 76%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 992px) {
+  .message__content__footer__layout__second img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .message__content__footer__layout__second img {
+    width: 80%;
+  }
+}
+
+.first-title {
+  color: #e26c08;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.second-title {
+  position: relative;
+  margin-block: 1.4rem;
+  color: #010061;
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+.second-title::after {
+  content: "";
+  width: 25%;
+  height: 0.23rem;
+  border-radius: 1.2rem;
+  position: absolute;
+  bottom: -2.4rem;
+  right: 0;
+  background-color: #010061;
+}
+@media only screen and (max-width: 992px) {
+  .second-title::after {
+    width: 20%;
+    right: 40%;
+    bottom: -3rem;
+  }
 }

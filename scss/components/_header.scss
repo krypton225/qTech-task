@@ -57,6 +57,10 @@
             position: absolute;
             left: -9rem;
             z-index: 999;
+            animation: top-bottom 3s infinite;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-play-state: running;
 
             @include breakpoint(tablet) {
                 display: none;

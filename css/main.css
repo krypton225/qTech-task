@@ -205,6 +205,20 @@ template {
   display: none;
 }
 
+@keyframes top-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1.3rem);
+    transform: translateY(-1.3rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 .fz-1 {
   font-size: 1.22rem;
 }
@@ -669,6 +683,10 @@ a:active, a:focus {
   position: absolute;
   left: -9rem;
   z-index: 999;
+  animation: top-bottom 3s infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-play-state: running;
 }
 @media only screen and (max-width: 992px) {
   .landing__content__layer {

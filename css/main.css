@@ -16,7 +16,7 @@ html {
 body {
   height: 2000px;
   margin: 0;
-  font-family: "Tajawal", sans-serif !important;
+  font-family: "Tajawal", sans-serif;
 }
 body::-webkit-scrollbar {
   width: 0.5rem;

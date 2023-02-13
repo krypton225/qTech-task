@@ -145,9 +145,11 @@
 
                 &__second {
                     width: 100%;
+                    display: grid;
+                    place-items: center;
 
                     img {
-                        width: 76%;
+                        width: 86%;
                         object-fit: cover;
 
                         @include breakpoint(tablet) {

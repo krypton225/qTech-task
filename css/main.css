@@ -973,9 +973,11 @@ a:active, a:focus {
 }
 .message__content__footer__layout__second {
   width: 100%;
+  display: grid;
+  place-items: center;
 }
 .message__content__footer__layout__second img {
-  width: 76%;
+  width: 86%;
   object-fit: cover;
 }
 @media only screen and (max-width: 992px) {

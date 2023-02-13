@@ -1,0 +1,104 @@
+.message {
+    width: 100%;
+    margin-top: 5rem;
+
+    &__content {
+        width: 100%;
+
+        &__header {
+            width: 100%;
+            margin-inline: auto;
+            @include grid-columns(2);
+            gap: 10rem 6rem;
+
+            @include breakpoint(tablet) {
+                @include grid-columns(1);
+                gap: 6rem;
+            }
+
+            @include breakpoint(mobile) {
+                gap: 22rem 6rem;
+            }
+
+            &__card {
+                width: 100%;
+                height: 15rem;
+                @include flex-center-row;
+                align-items: start;
+                gap: 3rem;
+
+                @include breakpoint(mobile) {
+                    @include flex-center-column;
+                    gap: 6rem;
+                }
+
+                @include breakpoint(mobile) {
+                    text-align: center;
+                }
+
+                &-img {
+                    position: relative;
+                    -webkit-margin-end: 2.4rem;
+                    margin-inline-end: 2.4rem;
+                    @include flex-center-row;
+
+                    @media (max-width: 116rem) {
+                        width: 13rem;
+                        text-align: center;
+                    }
+
+                    @include breakpoint(tablet) {
+                        -webkit-margin-start: 3.4rem;
+                        margin-inline-start: 3.4rem;
+                    }
+
+                    @media (max-width: 83rem) {
+                        -webkit-margin-start: 3rem;
+                        margin-inline-start: 3rem;
+                    }
+
+                    @include breakpoint(mobile) {
+                        width: 8rem;
+                        margin-bottom: 1.4rem;
+                    }
+
+                    .blob-svg {
+                        width: 100%;
+                        position: relative;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                        transform: scale(3.2);
+
+                        @include breakpoint(tablet) {
+                            transform: scale(2.1);
+                        }
+
+                        @include breakpoint(mobile) {
+                            transform: scale(3.5);
+                        }
+                    }
+
+                    .goal-pic {
+                        width: 5rem;
+                        @include flex-center-row;
+                        position: absolute;
+                        z-index: 1;
+                    }
+                }
+
+                &-info {
+                    align-self: flex-start;
+
+                    &__title {
+                        font-size: 2.2rem;
+                        margin-bottom: 2rem;
+                    }
+
+                    &__desc {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

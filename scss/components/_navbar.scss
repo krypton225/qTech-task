@@ -54,11 +54,11 @@
             @include flex-end-row;
 
             @include breakpoint(tablet) {
-                width: 25rem;
+                width: 44rem;
                 height: 100vh;
                 @include flex-center-column;
                 position: absolute;
-                left: -100%;
+                left: -140%;
                 top: 0;
                 background-color: white;
                 border-right: 0.1rem solid lighten($color-black, 40%);

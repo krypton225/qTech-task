@@ -4,7 +4,7 @@ ul {
 
 section {
     width: 100%;
-    padding: 12rem 0;
+    padding: 15rem 0;
 }
 
 a {
@@ -18,7 +18,7 @@ a {
 
 .container {
     margin-inline: auto;
-    padding-inline: 1.5rem;
+    padding-inline: 2.4rem;
 
     @each $screen-width, $container-width in $main-widths {
         @media (min-width: $screen-width) {

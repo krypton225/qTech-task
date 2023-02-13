@@ -40,7 +40,8 @@
                 width: 65%;
                 display: block;
                 margin-inline: auto;
-                object-fit: cover;
+                -o-object-fit: cover;
+                   object-fit: cover;
 
                 @media (max-width: 768px) {
                     width: 60%;

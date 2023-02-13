@@ -427,6 +427,7 @@ a:active, a:focus {
   width: 65%;
   display: block;
   margin-inline: auto;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 @media (max-width: 768px) {

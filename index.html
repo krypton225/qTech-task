@@ -32,16 +32,21 @@
             <div class="container">
                 <div class="navbar__content">
                     <div class="navbar__content__logo">
-                        <img src="./assets/images/logo.png" alt="RAC Logo">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="./assets/images/logo.png">
+                            <source media="(max-width: 768px)" srcset="./assets/images/logo-sm.png">
+                            <img src="./assets/images/logo.png" alt="RAC Logo">
+                        </picture>
                     </div> <!-- ./navbar__content__logo -->
 
-                    <ul class="navbar__content__list">
+                    <ul class="navbar__content__list" id="navbar-list">
                         <li class="navbar__content__list-item">
                             <a href="#" aria-label="الرئيسية" class="navbar__content__list-item__link">الرئيسية</a>
                         </li> <!-- ./navbar__content__list-item -->
 
                         <li class="navbar__content__list-item">
-                            <a href="#" aria-label="الرؤية والرسالة" class="navbar__content__list-item__link">الرؤية والرسالة</a>
+                            <a href="#" aria-label="الرؤية والرسالة" class="navbar__content__list-item__link">الرؤية
+                                والرسالة</a>
                         </li> <!-- ./navbar__content__list-item -->
 
                         <li class="navbar__content__list-item">
@@ -49,7 +54,8 @@
                         </li> <!-- ./navbar__content__list-item -->
 
                         <li class="navbar__content__list-item">
-                            <a href="#" aria-label="الهيكل التنظيمي" class="navbar__content__list-item__link">الهيكل التنظيمي</a>
+                            <a href="#" aria-label="الهيكل التنظيمي" class="navbar__content__list-item__link">الهيكل
+                                التنظيمي</a>
                         </li> <!-- ./navbar__content__list-item -->
 
                         <li class="navbar__content__list-item">

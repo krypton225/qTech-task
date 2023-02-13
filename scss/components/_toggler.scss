@@ -1,12 +1,14 @@
 .toggler {
     width: 4.2rem;
     height: 2.2rem;
+    position: relative;
     @include flex-between-column;
     cursor: pointer;
     display: none;
+    z-index: 999999;
 
     @include breakpoint(tablet) {
-        display: block;
+        display: flex;
     }
 
     span {

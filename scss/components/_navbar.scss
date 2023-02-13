@@ -11,25 +11,65 @@
         &__logo {
             --logo-border-radius: 7rem;
 
-            width: 12.5rem;
-            min-height: 13rem;
+            width: 10.5rem;
+            min-height: 8rem;
+            height: 11rem;
             @include flex-center-row;
             border-bottom-left-radius: var(--logo-border-radius);
             border-bottom-right-radius: var(--logo-border-radius);
-            background-color: #ff11ee;
+            background-color: #ff11ee; //TODO: bg
 
-            img {
-                width: 65%;
-                object-fit: cover;
+            @media (max-width: 768px) {
+                width: 10rem;
+                height: 10rem;
             }
+
+            picture source, picture img {
+                width: 65%;
+                display: block;
+                margin-inline: auto;
+                object-fit: cover;
+
+                @media (max-width: 768px) {
+                    width: 60%;
+                }
+            }
+
         }
 
         &__list {
             width: 100%;
             @include flex-end-row;
 
+            @include breakpoint(tablet) {
+                width: 25rem;
+                height: 100vh;
+                @include flex-center-column;
+                position: absolute;
+                left: -100%;
+                top: 0;
+                background-color: white;
+                border-right: 0.1rem solid lighten($color-black, 40%);
+                z-index: 99999;
+                @include transition(left, 0.44, ease-in-out, 0);
+
+                &.active {
+                    left: 0;
+                }
+            }
+
+            @include breakpoint(mobile) {
+                width: 100vw;
+            }
+
             &-item {
                 margin-inline-end: 6rem;
+
+                @include breakpoint(tablet) {
+                    text-align: center;
+                    margin-inline: auto;
+                    margin-block: 1rem;
+                }
 
                 &__link {
                     position: relative;

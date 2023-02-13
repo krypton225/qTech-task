@@ -25,6 +25,7 @@ const Toggler = (function () {
         if (isExisted(toggler) && isExisted(allTogglerLines)) {
             toggler.addEventListener("click", () => {
                 toggleClassesInLines(allTogglerLines);
+                document.getElementById("navbar-list").classList.toggle("active");
             });
         }
     }

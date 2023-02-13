@@ -57,17 +57,22 @@
             position: absolute;
             left: -9rem;
             z-index: 999;
+            -webkit-animation: top-bottom 3s infinite;
             animation: top-bottom 3s infinite;
+            -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
+            -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
+            -webkit-animation-play-state: running;
             animation-play-state: running;
 
             @include breakpoint(tablet) {
                 display: none;
             }
-    
+
             img {
                 width: 100%;
+                -o-object-fit: cover;
                 object-fit: cover;
             }
         }
@@ -82,6 +87,7 @@
 
         img {
             width: 100%;
+            -o-object-fit: cover;
             object-fit: cover;
         }
     }

@@ -1063,21 +1063,142 @@ a:active, a:focus {
   left: 4rem;
 }
 
-@font-face {
-  font-family: "fontello";
-  src: url("../assets/fontello/fontello.eot?96612797");
-  src: url("../assets/fontello/fontello.eot?96612797#iefix") format("embedded-opentype"), url("../assets/fontello/fontello.woff2?96612797") format("woff2"), url("../assets/fontello/fontello.woff?96612797") format("woff"), url("../assets/fontello/fontello.ttf?96612797") format("truetype"), url("../assets/fontello/fontello.svg?96612797#fontello") format("svg");
-  font-weight: normal;
-  font-style: normal;
+.footer {
+  width: 100vw;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-color: #010061;
+  color: white;
 }
-[class^=icon-],
-[class*=" icon-"] {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1em;
+.footer__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17rem;
+}
+@media only screen and (max-width: 992px) {
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 7rem;
+  }
+}
+.footer__content__right {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+@media only screen and (max-width: 576px) {
+  .footer__content__right {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.footer__content__right__first {
+  width: 100%;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-align-items: start;
+  -moz-align-items: start;
+  -ms-align-items: start;
+  -o-align-items: start;
+  align-items: start;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.footer-title-column {
+  margin-bottom: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.footer-list {
+  width: 100%;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-align-items: start;
+  -moz-align-items: start;
+  -ms-align-items: start;
+  -o-align-items: start;
+  align-items: start;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.footer-list-item {
+  margin-bottom: 1.5rem;
+}
+.footer-list-item__link {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  font-size: 1.34rem;
+  color: white;
+}
+.footer-list-item__link i {
+  margin-inline-end: 0.7rem;
+  font-size: 1.6rem;
+}
+.footer-list-item__link i.bg {
+  width: 2.7rem;
+  height: 2.7rem;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  color: #010061;
+}
+.footer__copyright {
+  padding-top: 1.3rem;
+  margin-top: 3rem;
+  border-top: 0.1rem solid white;
+  text-align: center;
+  font-size: 1.3rem;
 }
 
+@font-face {
+  font-family: "fontello";
+  src: url("../assets/fontello/fontello.eot?44042432");
+  src: url("../assets/fontello/fontello.eot?44042432#iefix") format("embedded-opentype"), url("../assets/fontello/fontello.woff2?44042432") format("woff2"), url("../assets/fontello/fontello.woff?44042432") format("woff"), url("../assets/fontello/fontello.ttf?44042432") format("truetype"), url("../assets/fontello/fontello.svg?44042432#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 [class^=icon-]:before,
 [class*=" icon-"]:before {
   font-family: "fontello";
@@ -1097,6 +1218,38 @@ a:active, a:focus {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-up-open:before {
+.icon-home:before {
   content: "\e800";
+}
+
+.icon-mail:before {
+  content: "\e801";
+}
+
+.icon-phone:before {
+  content: "\e802";
+}
+
+.icon-rss:before {
+  content: "\e803";
+}
+
+.icon-up-open:before {
+  content: "\e804";
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-gplus:before {
+  content: "\f0d5";
+}
+
+.icon-linkedin:before {
+  content: "\f0e1";
 }

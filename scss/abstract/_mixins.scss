@@ -68,6 +68,12 @@
     @include prefixing(align-items, center);
 }
 
+@mixin flex-start-column {
+    @include prefixing(display, flex);
+    @include prefixing(align-items, start);
+    @include prefixing(flex-direction, column);
+}
+
 @mixin flex-center-column {
     @include flex-center-row;
     @include prefixing(flex-direction, column);

@@ -1,0 +1,69 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    &__content {
+        width: 100%;
+        @include flex-between-row;
+
+        &__logo {
+            --logo-border-radius: 7rem;
+
+            width: 12.5rem;
+            min-height: 13rem;
+            @include flex-center-row;
+            border-bottom-left-radius: var(--logo-border-radius);
+            border-bottom-right-radius: var(--logo-border-radius);
+            background-color: #ff11ee;
+
+            img {
+                width: 65%;
+                object-fit: cover;
+            }
+        }
+
+        &__list {
+            width: 100%;
+            @include flex-end-row;
+
+            &-item {
+                margin-inline-end: 6rem;
+
+                &__link {
+                    position: relative;
+                    display: block;
+                    padding-block: 1rem;
+                    font-size: 1.7rem;
+
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 0.3rem;
+                        position: absolute;
+                        right: 0;
+                        bottom: -0.3rem;
+                        background-color: $color-orange;
+                        // TODO: color
+                        @include fade(hide);
+                        @include fading-transition(0.34, ease-in);
+                    }
+
+                    &:hover {
+                        color: $color-orange;
+                        @include transition(color, 0.34, ease-in, 0);
+
+                        &::before {
+                            @include fade(show);
+                        }
+                    }
+
+                    &:active {
+                        color: $color-orange;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.toggler {
+    width: 4.2rem;
+    height: 2.2rem;
+    @include flex-between-column;
+    cursor: pointer;
+    display: none;
+
+    @include breakpoint(tablet) {
+        display: block;
+    }
+
+    span {
+        width: 100%;
+        border-radius: 2rem;
+        height: 0.3rem;
+        display: block;
+        background-color: $color-black;
+        @include transition();
+
+        &[class^="toggle-"] {
+            @include transition();
+        }
+
+        &.toggle-rotation-clockwise {
+            transform: rotate(-45deg) translate(-0.4rem, 0.9rem);
+        }
+
+        &.toggle-rotation-not-clockwise {
+            transform: rotate(45deg) translate(-0.5rem, -0.9rem);
+        }
+
+        &.toggle-fade {
+            transform: translateX(-2rem);
+            @include fade("hide");
+        }
+    }
+}

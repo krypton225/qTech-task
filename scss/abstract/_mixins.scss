@@ -107,7 +107,7 @@
     @include prefixing(transform, translate(-50%, -50%));
 }
 
-@mixin transition($prop, $time, $func, $delaying) {
+@mixin transition($prop: all, $time: 0.3, $func: ease-in-out, $delaying: 0) {
     @if $func == ease {
         @include prefixing(transition, $prop #{$time}s ease #{$delaying}s);
     } @else if $func == ease-in {
@@ -128,6 +128,6 @@
 }
 
 @mixin center-x {
-  display: block;
-  @include prefixing(margin-inline, auto);
+    display: block;
+    @include prefixing(margin-inline, auto);
 }

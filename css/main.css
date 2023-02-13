@@ -206,7 +206,6 @@ template {
 
 /* cairo-200 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-display: swap;
@@ -216,7 +215,6 @@ template {
 }
 /* cairo-300 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-display: swap;
@@ -226,7 +224,6 @@ template {
 }
 /* cairo-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-display: swap;
@@ -236,7 +233,6 @@ template {
 }
 /* cairo-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-display: swap;
@@ -246,7 +242,6 @@ template {
 }
 /* cairo-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-display: swap;
@@ -256,7 +251,6 @@ template {
 }
 /* cairo-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-display: swap;
@@ -266,7 +260,6 @@ template {
 }
 /* cairo-800 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-display: swap;
@@ -276,7 +269,6 @@ template {
 }
 /* cairo-900 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-display: swap;
@@ -327,4 +319,182 @@ a:active, a:focus {
   .container {
     width: 117rem;
   }
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.navbar__content {
+  width: 100%;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+.navbar__content__logo {
+  --logo-border-radius: 7rem;
+  width: 12.5rem;
+  min-height: 13rem;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  border-bottom-left-radius: var(--logo-border-radius);
+  border-bottom-right-radius: var(--logo-border-radius);
+  background-color: #ff11ee;
+}
+.navbar__content__logo img {
+  width: 65%;
+  object-fit: cover;
+}
+.navbar__content__list {
+  width: 100%;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+.navbar__content__list-item {
+  margin-inline-end: 6rem;
+}
+.navbar__content__list-item__link {
+  position: relative;
+  display: block;
+  padding-block: 1rem;
+  font-size: 1.7rem;
+}
+.navbar__content__list-item__link::before {
+  content: "";
+  width: 100%;
+  height: 0.3rem;
+  position: absolute;
+  right: 0;
+  bottom: -0.3rem;
+  background-color: #e26c08;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility;
+  -moz-transition: visibility;
+  -ms-transition: visibility;
+  -o-transition: visibility;
+  transition: visibility;
+  -webkit-transition: opacity;
+  -moz-transition: opacity;
+  -ms-transition: opacity;
+  -o-transition: opacity;
+  transition: opacity;
+  transition: visibility 0.34s ease-in, opacity 0.34s ease-in;
+}
+.navbar__content__list-item__link:hover {
+  color: #e26c08;
+  -webkit-transition: color 0.34s ease-in 0s;
+  -moz-transition: color 0.34s ease-in 0s;
+  -ms-transition: color 0.34s ease-in 0s;
+  -o-transition: color 0.34s ease-in 0s;
+  transition: color 0.34s ease-in 0s;
+}
+.navbar__content__list-item__link:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+.navbar__content__list-item__link:active {
+  color: #e26c08;
+}
+
+.toggler {
+  width: 4.2rem;
+  height: 2.2rem;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .toggler {
+    display: block;
+  }
+}
+.toggler span {
+  width: 100%;
+  border-radius: 2rem;
+  height: 0.3rem;
+  display: block;
+  background-color: #414648;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.toggler span[class^=toggle-] {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.toggler span.toggle-rotation-clockwise {
+  transform: rotate(-45deg) translate(-0.4rem, 0.9rem);
+}
+.toggler span.toggle-rotation-not-clockwise {
+  transform: rotate(45deg) translate(-0.5rem, -0.9rem);
+}
+.toggler span.toggle-fade {
+  transform: translateX(-2rem);
+  visibility: hidden;
+  opacity: 0;
 }

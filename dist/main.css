@@ -733,10 +733,10 @@ a:active, a:focus {
     text-align: center;
   }
 }
-@media (min-width: 993px) {
+@media (min-width: 993px) and (max-width: 1371px) {
   .main-btn {
-    margin-inline: auto;
-    text-align: center;
+    margin-inline: 0;
+    text-align: start;
   }
 }
 @media (min-width: 1430px) {

@@ -16,6 +16,11 @@
         text-align: center;
     }
 
+    @media (min-width: 993px) {
+        margin-inline: auto;
+        text-align: center;
+    }
+
     @media (min-width: 1430px) {
         margin-inline: auto;
         text-align: center;

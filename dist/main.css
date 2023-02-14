@@ -616,7 +616,7 @@ a:active, a:focus {
     text-align: center;
   }
 }
-@media (min-width: 993px) and (max-width: 1339px) {
+@media (min-width: 993px) and (max-width: 1372px) {
   .landing__content__text {
     margin-inline: auto;
   }
@@ -667,7 +667,7 @@ a:active, a:focus {
     bottom: -50rem;
   }
 }
-@media (min-width: 1370px) {
+@media (min-width: 1372px) {
   .landing__content__layer {
     display: none;
   }

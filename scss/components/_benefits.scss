@@ -85,11 +85,9 @@
 
                 img {
                     width: 45%;
-                    -o-object-fit: cover;
-                    object-fit: cover;
+                    @include prefixing(object-fit, cover);
                     text-align: center;
-                    -webkit-filter: brightness(0) invert(1);
-                    filter: brightness(0) invert(1);
+                    @include prefixing(filter, brightness(0) invert(1));
                 }
             }
 

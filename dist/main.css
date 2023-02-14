@@ -1547,10 +1547,16 @@ a:active, a:focus {
 }
 .benefits__content__card__img img {
   width: 45%;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
   -o-object-fit: cover;
   object-fit: cover;
   text-align: center;
   -webkit-filter: brightness(0) invert(1);
+  -moz-filter: brightness(0) invert(1);
+  -ms-filter: brightness(0) invert(1);
+  -o-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
 }
 .benefits__content__card__title {

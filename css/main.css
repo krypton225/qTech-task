@@ -1385,6 +1385,7 @@ a:active, a:focus {
 .benefits {
   width: 100%;
   padding-top: 3rem;
+  counter-reset: add;
 }
 .benefits__content {
   width: 100%;
@@ -1397,6 +1398,7 @@ a:active, a:focus {
   .benefits__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1408,7 +1410,43 @@ a:active, a:focus {
 .benefits__content__card {
   width: 100%;
   padding: 2rem;
+  position: relative;
   text-align: center;
+}
+.benefits__content__card::before {
+  --width-height: 4rem;
+  counter-increment: add;
+  content: counter(add) "";
+  width: var(--width-height);
+  height: var(--width-height);
+  border-radius: 50%;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  background-color: #414648;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media only screen and (max-width: 576px) {
+  .benefits__content__card::before {
+    content: none;
+  }
 }
 .benefits__content__card__img {
   width: 14rem;

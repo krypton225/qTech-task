@@ -655,9 +655,16 @@ a:active, a:focus {
     bottom: -35rem;
   }
 }
-@media (min-width: 1130px) and (max-width: 1369px) {
+@media (min-width: 1130px) and (max-width: 1170px) {
   .landing__content__layer {
+    display: block;
+    left: -11rem;
     bottom: -44rem;
+  }
+}
+@media (min-width: 1171px) {
+  .landing__content__layer {
+    bottom: -50rem;
   }
 }
 @media (min-width: 1370px) {

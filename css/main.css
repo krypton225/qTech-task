@@ -817,6 +817,7 @@ a:active, a:focus {
   }
 }
 .message__content__header__card-img {
+  margin-top: 2rem;
   position: relative;
   -webkit-margin-end: 2.4rem;
   margin-inline-end: 2.4rem;

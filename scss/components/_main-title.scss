@@ -14,6 +14,11 @@
     color: white;
 }
 
+.first-title-center {
+    @extend .first-title;
+    text-align: center;
+}
+
 .second-title {
     position: relative;
     margin-block: 1.4rem;
@@ -51,5 +56,15 @@
             text-align: center;
             right: 40%;
         }
+    }
+}
+
+.second-title-center {
+    @extend .second-title;
+    text-align: center;
+
+    &::after {
+        width: 10%;
+        right: 45%;
     }
 }

@@ -165,7 +165,7 @@
 
                     img {
                         width: 86%;
-                        object-fit: cover;
+                        @include prefixing(object-fit, cover);
 
                         @include breakpoint(tablet) {
                             width: 50%;

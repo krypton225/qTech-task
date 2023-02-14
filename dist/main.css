@@ -1065,6 +1065,10 @@ a:active, a:focus {
 }
 .message__content__footer__layout__second img {
   width: 86%;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 @media only screen and (max-width: 992px) {

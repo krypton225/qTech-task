@@ -917,7 +917,9 @@ a:active, a:focus {
   font-size: 1.6rem;
 }
 .message__content__footer__title a {
+  font-weight: bold;
   text-decoration: underline;
+  color: #010061;
 }
 .message__content__footer__layout {
   width: 100%;

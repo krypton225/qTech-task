@@ -699,6 +699,11 @@ a:active, a:focus {
     text-align: center;
   }
 }
+@media (min-width: 993px) and (max-width: 1339px) {
+  .landing__content__text {
+    margin-inline: auto;
+  }
+}
 .landing__content__text p:not(:nth-child(1)) {
   margin-block: 1.8rem;
 }
@@ -726,7 +731,12 @@ a:active, a:focus {
     display: none;
   }
 }
-@media (min-width: 1340px) {
+@media (min-width: 993px) and (max-width: 1369px) {
+  .landing__content__layer {
+    display: block;
+  }
+}
+@media (min-width: 1370px) {
   .landing__content__layer {
     display: none;
   }

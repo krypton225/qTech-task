@@ -676,13 +676,7 @@ a:active, a:focus {
 .landing__content__text {
   width: 100%;
 }
-@media only screen and (max-width: 992px) {
-  .landing__content__text {
-    margin-inline: auto;
-    text-align: center;
-  }
-}
-@media (min-width: 1430px) {
+@media (max-width: 1999px) {
   .landing__content__text {
     margin-inline: auto;
     text-align: center;
@@ -699,6 +693,7 @@ a:active, a:focus {
   position: absolute;
   left: -9rem;
   z-index: 999;
+  display: none;
   -webkit-animation: top-bottom 3s ease-in-out 0s infinite normal both;
   -moz-animation: top-bottom 3s ease-in-out 0s infinite normal both;
   -ms-animation: top-bottom 3s ease-in-out 0s infinite normal both;
@@ -710,14 +705,9 @@ a:active, a:focus {
   -o-animation-play-state: running;
   animation-play-state: running;
 }
-@media only screen and (max-width: 992px) {
+@media (min-width: 1115px) and (max-width: 1200px) {
   .landing__content__layer {
-    display: none;
-  }
-}
-@media (min-width: 1200px) {
-  .landing__content__layer {
-    display: none;
+    display: block;
   }
 }
 .landing__content__layer img {

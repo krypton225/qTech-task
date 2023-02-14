@@ -715,7 +715,7 @@ a:active, a:focus {
     display: none;
   }
 }
-@media (min-width: 1430px) {
+@media (min-width: 1200px) {
   .landing__content__layer {
     display: none;
   }

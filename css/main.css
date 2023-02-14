@@ -219,6 +219,20 @@ template {
     transform: translateY(0);
   }
 }
+@keyframes scale-1-2 {
+  0% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    -webkit-transform: scale(1.2) rotate(-6deg);
+    transform: scale(1.2) rotate(-6deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
 .fz-1 {
   font-size: 1.22rem;
 }
@@ -905,6 +919,14 @@ a:active, a:focus {
   align-items: center;
   position: absolute;
   z-index: 1;
+  -webkit-animation: scale-1-2 3s infinite;
+  animation: scale-1-2 3s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
 }
 .message__content__header__card-info {
   align-self: flex-start;

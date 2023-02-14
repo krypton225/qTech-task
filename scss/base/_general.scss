@@ -230,6 +230,23 @@ template {
     }
 }
 
+@keyframes scale-1-2 {
+    0% {
+        -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2) rotate(-6deg);
+        transform: scale(1.2) rotate(-6deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0);
+    }
+}
+
 // * Generate font sizes from 1 to 6
 @for $i from 1 through 6 {
     .fz-#{$i} {

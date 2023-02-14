@@ -739,6 +739,12 @@ a:active, a:focus {
     text-align: center;
   }
 }
+@media (min-width: 993px) and (max-width: 1372px) {
+  .main-btn {
+    margin-inline: auto;
+    text-align: center;
+  }
+}
 .main-btn:hover {
   background-color: #002060;
 }

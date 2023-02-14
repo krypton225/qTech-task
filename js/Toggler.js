@@ -30,6 +30,23 @@ const Toggler = (function () {
         }
     }
 
+    function closeTogglerAfterClickLink() {
+        const allLinks = document.querySelectorAll(".navbar__content__list-item a");
+
+        allLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                document.getElementById("navbar-list").classList.remove("active");
+
+                const allLines = document.querySelectorAll(".toggler__line");
+                allLines[0].classList.toggle("toggle-rotation-clockwise");
+                allLines[1].classList.toggle("toggle-fade");
+                allLines[2].classList.toggle("toggle-rotation-not-clockwise");
+            });
+        });
+    }
+
+    closeTogglerAfterClickLink();
+
     return {
         click: setClick,
     };

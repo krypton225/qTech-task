@@ -55,13 +55,35 @@ const Scroll = (function () {
         });
     }
 
+    function changeNavLinksState(linksClassName = "", elementSelector = "") {
+        if (linksClassName === undefined || linksClassName === "") {
+            throw new Error("There is a error while typing the links class names.");
+        }
+
+        if (elementSelector === undefined || elementSelector === "") {
+            throw new Error("There is a error while typing the IDs of sections.");
+        }
+
+        const allLinks = document.querySelectorAll(linksClassName);
+        const allSections = document.querySelectorAll(elementSelector);
+
+        let myIndex = allSections.length;
+
+        while (--myIndex && window.scrollY + 40 < allSections[myIndex].offsetTop) { }
+
+        allLinks.forEach((link) => link.classList.remove("active"));
+        allLinks[myIndex].classList.add("active");
+    }
+
     changeBackgroundLinesWhenScrolling(document.querySelectorAll("#navbar-toggler span"));
 
     changeLogoHeightWhenScrolling("navbar-logo");
 
+    // window.addEventListener("scroll", changeNavLinksState(".navbar__content__list-item a", "section"));
+
     return {
         init: setNavbarSticky,
-        goTop
+        goTop,
     };
 })();
 

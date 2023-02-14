@@ -554,7 +554,7 @@ a:active, a:focus {
   visibility: visible;
   opacity: 1;
 }
-.navbar__content__list-item__link:active {
+.navbar__content__list-item__link:active, .navbar__content__list-item__link.active {
   color: #e26c08;
 }
 

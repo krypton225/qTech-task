@@ -219,7 +219,7 @@ template {
     transform: translateY(0);
   }
 }
-@keyframes scale-1-2 {
+@keyframes scale-rotate-1-2 {
   0% {
     -webkit-transform: scale(1) rotate(0);
     transform: scale(1) rotate(0);
@@ -921,11 +921,11 @@ a:active, a:focus {
   align-items: center;
   position: absolute;
   z-index: 1;
-  -webkit-animation: scale-1-2 3s ease-in-out 0s infinite normal both;
-  -moz-animation: scale-1-2 3s ease-in-out 0s infinite normal both;
-  -ms-animation: scale-1-2 3s ease-in-out 0s infinite normal both;
-  -o-animation: scale-1-2 3s ease-in-out 0s infinite normal both;
-  animation: scale-1-2 3s ease-in-out 0s infinite normal both;
+  -webkit-animation: scale-rotate-1-2 3s ease-in-out 0s infinite normal both;
+  -moz-animation: scale-rotate-1-2 3s ease-in-out 0s infinite normal both;
+  -ms-animation: scale-rotate-1-2 3s ease-in-out 0s infinite normal both;
+  -o-animation: scale-rotate-1-2 3s ease-in-out 0s infinite normal both;
+  animation: scale-rotate-1-2 3s ease-in-out 0s infinite normal both;
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
   -ms-animation-play-state: running;

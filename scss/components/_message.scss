@@ -84,7 +84,7 @@
                         @include flex-center-row;
                         position: absolute;
                         z-index: 1;
-                        @include prefixing(animation, scale-1-2 3s ease-in-out 0s infinite normal both);
+                        @include prefixing(animation, scale-rotate-1-2 3s ease-in-out 0s infinite normal both);
                         @include prefixing(animation-play-state, running);
                     }
                 }

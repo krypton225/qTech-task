@@ -6,10 +6,10 @@
     "type": "git",
     "url": "https://github.com/krypton225/qTech-task.git"
   },
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "live-server",
-    "watch": "sass --no-source-map --watch scss:css",
+    "watch": "sass --no-source-map --watch scss:dist",
     "dev": "webpack --mode development",
     "prod": "webpack --mode production"
   },

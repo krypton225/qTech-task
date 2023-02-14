@@ -800,6 +800,11 @@ a:active, a:focus {
   grid-template-columns: repeat(2, 1fr);
   gap: 10rem 6rem;
 }
+@media (min-width: 1430px) {
+  .message__content__header {
+    gap: 10rem;
+  }
+}
 @media only screen and (max-width: 992px) {
   .message__content__header {
     display: grid;
@@ -914,6 +919,11 @@ a:active, a:focus {
   -o-object-fit: cover;
   object-fit: cover;
   transform: scale(3.2);
+}
+@media (min-width: 1430px) {
+  .message__content__header__card-img .blob-svg {
+    width: 70%;
+  }
 }
 @media only screen and (max-width: 992px) {
   .message__content__header__card-img .blob-svg {

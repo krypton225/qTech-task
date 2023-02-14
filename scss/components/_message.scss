@@ -11,6 +11,10 @@
             @include grid-columns(2);
             gap: 10rem 6rem;
 
+            @media (min-width: 1430px) {
+                gap: 10rem;
+            }
+
             @include breakpoint(tablet) {
                 @include grid-columns(1);
                 gap: 6rem;
@@ -69,6 +73,10 @@
                         -o-object-fit: cover;
                         object-fit: cover;
                         transform: scale(3.2);
+
+                        @media (min-width: 1430px) {
+                            width: 70%;
+                        }
 
                         @include breakpoint(tablet) {
                             transform: scale(2.1);

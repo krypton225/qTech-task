@@ -37,7 +37,7 @@
 
         @media (min-width: 1430px) {
             @include grid-columns(1);
-            place-items: center;
+            text-align: center;
         }
 
         &__text {

@@ -15,6 +15,10 @@
         margin-inline: auto;
     }
 
+    @media (min-width: 1430px) {
+        margin-inline: auto;
+    }
+
     &:hover {
         background-color: $color-blue-light;
     }

@@ -670,7 +670,7 @@ a:active, a:focus {
   .landing__content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    place-items: center;
+    text-align: center;
   }
 }
 .landing__content__text {
@@ -770,6 +770,11 @@ a:active, a:focus {
   transition: background-color 0.35s ease-in 0s;
 }
 @media only screen and (max-width: 992px) {
+  .main-btn {
+    margin-inline: auto;
+  }
+}
+@media (min-width: 1430px) {
   .main-btn {
     margin-inline: auto;
   }

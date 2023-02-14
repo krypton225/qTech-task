@@ -675,6 +675,12 @@ a:active, a:focus {
     text-align: center;
   }
 }
+@media (min-width: 1430px) {
+  .landing__content__text {
+    margin-inline: auto;
+    text-align: center;
+  }
+}
 .landing__content__text p:not(:nth-child(1)) {
   margin-block: 1.8rem;
 }

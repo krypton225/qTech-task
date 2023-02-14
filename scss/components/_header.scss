@@ -43,6 +43,11 @@
                 text-align: center;
             }
 
+            @media (min-width: 1430px) {
+                margin-inline: auto;
+                text-align: center;
+            }
+
             p:not(:nth-child(1)) {
                 margin-block: 1.8rem;
             }

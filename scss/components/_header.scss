@@ -43,12 +43,12 @@
         &__text {
             width: 100%;
 
-            // @include breakpoint(tablet) {
-            //     margin-inline: auto;
-            //     text-align: center;
-            // }
+            @include breakpoint(tablet) {
+                margin-inline: auto;
+                text-align: center;
+            }
 
-            @media (max-width: 1999px) {
+            @media (min-width: 1430px) {
                 margin-inline: auto;
                 text-align: center;
             }
@@ -67,16 +67,15 @@
             position: absolute;
             left: -9rem;
             z-index: 999;
-            display: none;
             @include prefixing(animation, top-bottom 3s ease-in-out 0s infinite normal both);
             @include prefixing(animation-play-state, running);
 
-            // @include breakpoint(tablet) {
-            //     display: none;
-            // }
+            @include breakpoint(tablet) {
+                display: none;
+            }
 
-            @media (min-width: 1115px) and (max-width: 1200px) {
-                display: block;
+            @media (min-width: 1340px) {
+                display: none;
             }
 
             img {

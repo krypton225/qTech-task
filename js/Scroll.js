@@ -39,7 +39,25 @@ const Scroll = (function () {
         });
     }
 
+    function changeLogoHeightWhenScrolling(logoID = "") {
+        if (logoID === undefined || logoID === "") {
+            throw new SyntaxError("changeLogoHeightWhenScrolling function must call with logoID parameter");
+        }
+
+        if (logoID === null) {
+            throw new Error("There is no such id in the DOM");
+        }
+
+        const logoELement = document.getElementById(logoID);
+
+        window.addEventListener("scroll", function () {
+            logoELement.classList.toggle("minimize", window.scrollY > 50);
+        });
+    }
+
     changeBackgroundLinesWhenScrolling(document.querySelectorAll("#navbar-toggler span"));
+
+    changeLogoHeightWhenScrolling("navbar-logo");
 
     return {
         init: setNavbarSticky,

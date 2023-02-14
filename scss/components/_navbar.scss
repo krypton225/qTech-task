@@ -29,6 +29,11 @@
             border-bottom-left-radius: var(--logo-border-radius);
             border-bottom-right-radius: var(--logo-border-radius);
             background-color: #fff;
+            @include transition();
+
+            &.minimize {
+                height: 6rem;
+            }
 
             @media (max-width: 768px) {
                 width: 10rem;

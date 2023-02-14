@@ -744,6 +744,9 @@ a:active, a:focus {
 }
 .landing__content__layer img {
   width: 100%;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -756,6 +759,9 @@ a:active, a:focus {
 }
 .landing__wave img {
   width: 100%;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
   -o-object-fit: cover;
   object-fit: cover;
 }

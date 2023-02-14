@@ -989,6 +989,16 @@ a:active, a:focus {
   width: 100%;
   display: grid;
   place-items: center;
+  -webkit-animation: top-bottom 2.5s ease-in-out 0s infinite normal both;
+  -moz-animation: top-bottom 2.5s ease-in-out 0s infinite normal both;
+  -ms-animation: top-bottom 2.5s ease-in-out 0s infinite normal both;
+  -o-animation: top-bottom 2.5s ease-in-out 0s infinite normal both;
+  animation: top-bottom 2.5s ease-in-out 0s infinite normal both;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
 }
 .message__content__footer__layout__second img {
   width: 86%;

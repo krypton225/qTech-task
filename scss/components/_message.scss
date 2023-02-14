@@ -152,6 +152,8 @@
                     width: 100%;
                     display: grid;
                     place-items: center;
+                    @include prefixing(animation, top-bottom 2.5s ease-in-out 0s infinite normal both);
+                    @include prefixing(animation-play-state, running);
 
                     img {
                         width: 86%;

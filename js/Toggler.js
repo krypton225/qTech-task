@@ -7,14 +7,18 @@ const Toggler = (function () {
         return true;
     }
 
+    function toggleClassNames(arr = []) {
+        arr[0].classList.toggle("toggle-rotation-clockwise");
+        arr[1].classList.toggle("toggle-fade");
+        arr[2].classList.toggle("toggle-rotation-not-clockwise");
+    }
+
     function toggleClassesInLines(elements = []) {
         if (elements.length === 0 || elements === undefined) {
             throw new Error("You must pass elements of array as parameter when calling toggleClassesInLines()");
         }
 
-        elements[0].classList.toggle("toggle-rotation-clockwise");
-        elements[1].classList.toggle("toggle-fade");
-        elements[2].classList.toggle("toggle-rotation-not-clockwise");
+        toggleClassNames(elements);
     }
 
     function setClick(togglerID = null, togglerSpans = null) {
@@ -38,9 +42,8 @@ const Toggler = (function () {
                 document.getElementById("navbar-list").classList.remove("active");
 
                 const allLines = document.querySelectorAll(".toggler__line");
-                allLines[0].classList.toggle("toggle-rotation-clockwise");
-                allLines[1].classList.toggle("toggle-fade");
-                allLines[2].classList.toggle("toggle-rotation-not-clockwise");
+
+                toggleClassNames(allLines);
             });
         });
     }

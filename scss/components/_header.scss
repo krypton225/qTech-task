@@ -79,10 +79,14 @@
                 display: none;
             }
 
-            @media (min-width: 993px) and (max-width: 1369px) {
+            @media (min-width: 993px) and (max-width: 1129px) {
                 display: block;
                 left: -11rem;
                 bottom: -35rem;
+            }
+
+            @media (min-width: 1130px) and (max-width: 1369px) {
+                bottom: -44rem;
             }
 
             @media (min-width: 1370px) {

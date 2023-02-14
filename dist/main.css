@@ -772,11 +772,13 @@ a:active, a:focus {
 @media only screen and (max-width: 992px) {
   .main-btn {
     margin-inline: auto;
+    text-align: center;
   }
 }
 @media (min-width: 1430px) {
   .main-btn {
     margin-inline: auto;
+    text-align: center;
   }
 }
 .main-btn:hover {

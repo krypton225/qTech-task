@@ -1674,6 +1674,18 @@ a:active, a:focus {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.contact__first__content__form input::-webkit-input-placeholder {
+  font-size: 1.4rem;
+}
+.contact__first__content__form input::-moz-placeholder {
+  font-size: 1.4rem;
+}
+.contact__first__content__form input:-ms-input-placeholder {
+  font-size: 1.4rem;
+}
+.contact__first__content__form input::-ms-input-placeholder {
+  font-size: 1.4rem;
+}
 .contact__first__content__form input::placeholder {
   font-size: 1.4rem;
 }

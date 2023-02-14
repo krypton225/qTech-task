@@ -697,7 +697,7 @@ a:active, a:focus {
   -o-animation-play-state: running;
   animation-play-state: running;
 }
-@media only screen and (max-width: 992px) {
+@media (max-width: 767px) and (min-width: 1330px) {
   .landing__content__layer {
     display: none;
   }

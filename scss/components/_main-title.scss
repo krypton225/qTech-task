@@ -2,6 +2,16 @@
     color: $color-orange;
     font-size: 2.2rem;
     font-weight: 600;
+
+    @include breakpoint(mobile) {
+        text-align: center;
+        font-size: 1.9rem;
+    }
+}
+
+.first-title-white {
+    @extend .first-title;
+    color: white;
 }
 
 .second-title {
@@ -10,6 +20,11 @@
     color: $color-blue-dark;
     font-size: 2.7rem;
     font-weight: 600;
+
+    @include breakpoint(mobile) {
+        text-align: center;
+        font-size: 2.2rem;
+    }
 
     &::after {
         content: "";
@@ -25,6 +40,16 @@
             width: 20%;
             right: 40%;
             bottom: -3rem;
+        }
+    }
+
+    &.sm::after {
+        bottom: -1.3rem;
+        right: 0;
+
+        @include breakpoint(mobile) {
+            text-align: center;
+            right: 40%;
         }
     }
 }

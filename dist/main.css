@@ -1813,7 +1813,11 @@ a:active, a:focus {
   color: white;
 }
 .footer-list-item__link i {
-  margin-inline-end: 0.7rem;
+  -webkit-margin-end: 0.7rem;
+  -moz-margin-end: 0.7rem;
+  -ms-margin-end: 0.7rem;
+  -o-margin-end: 0.7rem;
+  margin-end: 0.7rem;
   font-size: 1.6rem;
 }
 .footer-list-item__link i.bg {

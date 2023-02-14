@@ -739,6 +739,12 @@ a:active, a:focus {
     text-align: start;
   }
 }
+@media (min-width: 1372px) and (max-width: 1429px) {
+  .main-btn {
+    margin-inline: auto;
+    text-align: center;
+  }
+}
 @media (min-width: 1430px) {
   .main-btn {
     margin-inline: auto;

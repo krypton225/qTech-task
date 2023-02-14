@@ -21,6 +21,11 @@
         text-align: start;
     }
 
+    @media (min-width: 1372px) and (max-width: 1429px) {
+        margin-inline: auto;
+        text-align: center;
+    }
+
     @media (min-width: 1430px) {
         margin-inline: auto;
         text-align: center;

@@ -1117,6 +1117,81 @@ a:active, a:focus {
   object-fit: cover;
 }
 
+.benefits {
+  width: 100%;
+  padding-top: 3rem;
+}
+.benefits__content {
+  width: 100%;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+@media only screen and (max-width: 992px) {
+  .benefits__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .benefits__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.benefits__content__card {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+.benefits__content__card__img {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  margin-inline: auto;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(231, 140, 65) 28%, rgb(255, 132, 24) 79%);
+  background: -webkit-linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(231, 140, 65) 28%, rgb(255, 132, 24) 79%);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(231, 140, 65) 28%, rgb(255, 132, 24) 79%);
+}
+.benefits__content__card__img img {
+  width: 45%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  text-align: center;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+.benefits__content__card__title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #010061;
+  font-weight: 900;
+}
+.benefits__content__card__desc {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
 .contact {
   width: 100%;
   padding-top: 5rem;

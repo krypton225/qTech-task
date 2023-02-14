@@ -60,7 +60,11 @@
             @include prefixing(animation, top-bottom 3s ease-in-out 0s infinite normal both);
             @include prefixing(animation-play-state, running);
 
-            @media (max-width: 767px) and (min-width: 1330px) {
+            @include breakpoint(tablet) {
+                display: none;
+            }
+
+            @media (min-width: 1430px) {
                 display: none;
             }
 

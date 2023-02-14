@@ -1162,7 +1162,40 @@ a:active, a:focus {
 }
 
 .testimonials {
-  padding-top: 4rem;
+  position: relative;
+  padding-top: 7rem;
+}
+.testimonials__bottom {
+  width: 100%;
+  min-height: 30rem;
+  text-align: center;
+  padding-block: 4rem;
+  background-color: #010061;
+  box-shadow: 20px -7rem 5rem 5rem #010061;
+}
+@media only screen and (max-width: 576px) {
+  .testimonials__bottom {
+    min-height: 22rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .testimonials__bottom {
+    min-height: 27rem;
+  }
+}
+.testimonials__bottom__desc {
+  width: 80%;
+  margin-top: 4rem;
+  margin-inline: auto;
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #fff;
+}
+@media only screen and (max-width: 576px) {
+  .testimonials__bottom__desc {
+    width: 100%;
+    font-size: 1.6rem;
+  }
 }
 
 .swiper {
@@ -1175,23 +1208,28 @@ a:active, a:focus {
   overflow: hidden;
 }
 
+.swiper-slide {
+  border-radius: 0;
+}
+
 .card {
   width: 100%;
-  border-radius: 1.2rem;
+  border-radius: 0;
   background: #fff;
   border-radius: 0;
 }
 
 .image-box {
   height: 30rem;
-  border-radius: 1.2rem;
+  border-radius: 0;
   position: relative;
+  box-shadow: 0 2rem 5rem -5rem #010061;
 }
 .image-box::after {
   content: "";
   width: 100%;
   height: 100%;
-  border-radius: 1.2rem;
+  border-radius: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -1200,8 +1238,9 @@ a:active, a:focus {
 .image-box img {
   width: 100%;
   height: 100%;
-  border-radius: 1.2rem;
+  border-radius: 0;
   object-fit: cover;
+  box-shadow: 0 2rem 5rem -5rem #010061 inset;
 }
 
 .swiper-btn {
@@ -1276,9 +1315,71 @@ a:active, a:focus {
 .swiper-button-next {
   right: 20%;
 }
+@media only screen and (max-width: 992px) {
+  .swiper-button-next {
+    right: 10%;
+  }
+}
 
 .swiper-button-prev {
   left: 20%;
+}
+@media only screen and (max-width: 992px) {
+  .swiper-button-prev {
+    left: 10%;
+  }
+}
+
+.second__next,
+.second__prev {
+  width: 4rem;
+  height: 4rem;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  border-radius: 50%;
+  top: 50%;
+}
+@media only screen and (max-width: 992px) {
+  .second__next,
+  .second__prev {
+    display: none;
+  }
+}
+.second__next::before,
+.second__prev::before {
+  content: none;
+}
+.second__next i,
+.second__prev i {
+  margin: 0;
+  padding: 0;
+  right: 25%;
+}
+
+.second__next {
+  right: 0%;
+}
+
+.second__prev {
+  left: 0%;
 }
 
 .benefits {

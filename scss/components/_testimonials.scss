@@ -1,7 +1,39 @@
-$card-border-radius: 1.2rem;
+$card-border-radius: 0;
 
 .testimonials {
-    padding-top: 4rem;
+    position: relative;
+    padding-top: 7rem;
+
+    &__bottom {
+        width: 100%;
+        min-height: 30rem;
+        text-align: center;
+        padding-block: 4rem;
+        background-color: $color-blue-dark;
+        box-shadow: 20px -7rem 5rem 5rem $color-blue-dark;
+
+        @include breakpoint(mobile) {
+            min-height: 22rem;
+        }
+
+        @include breakpoint(mobile) {
+            min-height: 27rem;
+        }
+
+        &__desc {
+            width: 80%;
+            margin-top: 4rem;
+            margin-inline: auto;
+            font-size: 2rem;
+            line-height: 1.6;
+            color: #fff;
+
+            @include breakpoint(mobile) {
+                width: 100%;
+                font-size: 1.6rem;
+            }
+        }
+    }
 }
 
 .swiper {
@@ -12,6 +44,10 @@ $card-border-radius: 1.2rem;
     width: 100%;
     margin: 0;
     overflow: hidden;
+}
+
+.swiper-slide {
+    border-radius: $card-border-radius;
 }
 
 .card {
@@ -25,6 +61,7 @@ $card-border-radius: 1.2rem;
     height: 30rem;
     border-radius: $card-border-radius;
     position: relative;
+    box-shadow: 0 2rem 5rem -5rem $color-blue-dark;
 
     &::after {
         content: "";
@@ -42,6 +79,7 @@ $card-border-radius: 1.2rem;
         height: 100%;
         border-radius: $card-border-radius;
         object-fit: cover;
+        box-shadow: 0 2rem 5rem -5rem $color-blue-dark inset;
     }
 }
 
@@ -109,8 +147,47 @@ $card-border-radius: 1.2rem;
 
 .swiper-button-next {
     right: 20%;
+
+    @include breakpoint(tablet) {
+        right: 10%;
+    }
 }
 
 .swiper-button-prev {
     left: 20%;
+
+    @include breakpoint(tablet) {
+        left: 10%;
+    }
+}
+
+.second__next,
+.second__prev {
+    width: 4rem;
+    height: 4rem;
+    @include flex-center-column;
+    border-radius: 50%;
+    top: 50%;
+
+    @include breakpoint(tablet) {
+        display: none;
+    }
+
+    &::before {
+        content: none;
+    }
+
+    i {
+        margin: 0;
+        padding: 0;
+        right: 25%;
+    }
+}
+
+.second__next {
+    right: 0%;
+}
+
+.second__prev {
+    left: 0%;
 }

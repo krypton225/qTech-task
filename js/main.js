@@ -9,3 +9,4 @@ Scroll.init("navbar");
 Scroll.goTop("go-to-top");
 
 MainSwiper.firstSwiper();
+MainSwiper.secondSwiper();

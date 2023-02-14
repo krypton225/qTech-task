@@ -1211,6 +1211,10 @@ a:active, a:focus {
 }
 .who-us__logo img {
   width: 80%;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .who-us__desc {
@@ -1225,6 +1229,10 @@ a:active, a:focus {
 }
 .who-us__paper img {
   width: 100%;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 

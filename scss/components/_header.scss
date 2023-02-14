@@ -35,6 +35,10 @@
             @include grid-columns(1);
         }
 
+        @media (min-width: 1430px) {
+            place-items: center;
+        }
+
         &__text {
             width: 100%;
 

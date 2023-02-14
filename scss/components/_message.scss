@@ -84,14 +84,8 @@
                         @include flex-center-row;
                         position: absolute;
                         z-index: 1;
-                        -webkit-animation: scale-1-2 3s infinite;
-                        animation: scale-1-2 3s infinite;
-                        -webkit-animation-timing-function: ease-in-out;
-                        animation-timing-function: ease-in-out;
-                        -webkit-animation-fill-mode: both;
-                        animation-fill-mode: both;
-                        -webkit-animation-play-state: running;
-                        animation-play-state: running;
+                        @include prefixing(animation, scale-1-2 3s ease-in-out 0s infinite normal both);
+                        @include prefixing(animation-play-state, running);
                     }
                 }
 

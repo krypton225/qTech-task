@@ -581,6 +581,7 @@ a:active, a:focus {
 }
 .landing__content {
   width: 100%;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
@@ -650,7 +651,8 @@ a:active, a:focus {
 @media (min-width: 993px) and (max-width: 1369px) {
   .landing__content__layer {
     display: block;
-    bottom: -55rem;
+    left: -11rem;
+    bottom: -35rem;
   }
 }
 @media (min-width: 1370px) {

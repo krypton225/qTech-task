@@ -1,0 +1,116 @@
+$card-border-radius: 1.2rem;
+
+.testimonials {
+    padding-top: 4rem;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.slide-container {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.card {
+    width: 100%;
+    border-radius: $card-border-radius;
+    background: #fff;
+    border-radius: 0;
+}
+
+.image-box {
+    height: 30rem;
+    border-radius: $card-border-radius;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: $card-border-radius;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #00000049;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: $card-border-radius;
+        object-fit: cover;
+    }
+}
+
+.swiper-btn {
+    width: 5rem;
+    height: 3.45rem;
+    @include flex-center-row;
+    position: absolute;
+    top: 45%;
+    color: #fff;
+    background: $color-orange;
+    cursor: pointer;
+    z-index: 999999;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
+
+    i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.8rem;
+        z-index: 9999999;
+    }
+}
+
+%main {
+    content: "";
+    width: 3.44rem;
+    height: 3.44rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 49%;
+    transform: translateY(-50%);
+    background-color: $color-orange;
+    // background-color: blue;
+}
+
+.swiper-right {
+    position: absolute;
+
+    &::before {
+        @extend %main;
+        right: -34%;
+    }
+
+    i {
+        left: 45%;
+    }
+}
+
+.swiper-left {
+    position: absolute;
+
+    &::before {
+        @extend %main;
+        left: -34%;
+    }
+
+    i {
+        right: 45%;
+    }
+}
+
+.swiper-button-next {
+    right: 20%;
+}
+
+.swiper-button-prev {
+    left: 20%;
+}

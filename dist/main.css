@@ -582,22 +582,18 @@ a:active, a:focus {
 .landing__content {
   width: 100%;
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
-  justify-items: start;
+  display: flex;
+  align-items: center;
   color: white;
 }
 @media only screen and (max-width: 992px) {
   .landing__content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
   }
 }
 @media (min-width: 1372px) {
   .landing__content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
     text-align: center;
   }
 }
@@ -627,10 +623,26 @@ a:active, a:focus {
 .landing__content__text p:nth-child(2) {
   color: #e26c08;
 }
-.landing__content__layer {
+.landing__wave {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -3rem;
+  z-index: 9999;
+}
+.landing__wave img {
+  width: 100%;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.landing__wave__layer {
   width: 50rem;
   position: absolute;
   left: -9rem;
+  top: -20rem;
   z-index: 999;
   -webkit-animation: top-bottom 3s ease-in-out 0s infinite normal both;
   -moz-animation: top-bottom 3s ease-in-out 0s infinite normal both;
@@ -644,50 +656,23 @@ a:active, a:focus {
   animation-play-state: running;
 }
 @media only screen and (max-width: 992px) {
-  .landing__content__layer {
+  .landing__wave__layer {
     display: none;
   }
 }
 @media (min-width: 993px) and (max-width: 1129px) {
-  .landing__content__layer {
+  .landing__wave__layer {
     display: block;
     left: -11rem;
-    bottom: -35rem;
   }
 }
 @media (min-width: 1130px) and (max-width: 1170px) {
-  .landing__content__layer {
+  .landing__wave__layer {
     display: block;
     left: -11rem;
-    bottom: -44rem;
   }
 }
-@media (min-width: 1171px) {
-  .landing__content__layer {
-    bottom: -36rem;
-  }
-}
-@media (min-width: 1372px) {
-  .landing__content__layer {
-    display: none;
-  }
-}
-.landing__content__layer img {
-  width: 100%;
-  -webkit-object-fit: cover;
-  -moz-object-fit: cover;
-  -ms-object-fit: cover;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.landing__wave {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -3rem;
-  z-index: 9999;
-}
-.landing__wave img {
+.landing__wave__layer img {
   width: 100%;
   -webkit-object-fit: cover;
   -moz-object-fit: cover;

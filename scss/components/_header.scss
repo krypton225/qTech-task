@@ -27,17 +27,21 @@
     &__content {
         width: 100%;
         position: relative;
-        @include grid-columns(2);
-        gap: 5rem;
-        justify-items: start;
+        // @include grid-columns(2);
+        display: flex;
+        align-items: center;
+        // gap: 5rem;
+        // justify-items: start;
         color: white;
 
         @include breakpoint(tablet) {
-            @include grid-columns(1);
+            // @include grid-columns(1);
+            justify-content: center;
         }
 
         @media (min-width: 1372px) {
-            @include grid-columns(1);
+            // @include grid-columns(1);
+            justify-content: center;
             text-align: center;
         }
 
@@ -66,44 +70,6 @@
                 color: $color-orange;
             }
         }
-
-        &__layer {
-            width: 50rem;
-            position: absolute;
-            left: -9rem;
-            z-index: 999;
-            @include prefixing(animation, top-bottom 3s ease-in-out 0s infinite normal both);
-            @include prefixing(animation-play-state, running);
-
-            @include breakpoint(tablet) {
-                display: none;
-            }
-
-            @media (min-width: 993px) and (max-width: 1129px) {
-                display: block;
-                left: -11rem;
-                bottom: -35rem;
-            }
-
-            @media (min-width: 1130px) and (max-width: 1170px) {
-                display: block;
-                left: -11rem;
-                bottom: -44rem;
-            }
-
-            @media (min-width: 1171px) {
-                bottom: -36rem;
-            }
-
-            @media (min-width: 1372px) {
-                display: none;
-            }
-
-            img {
-                width: 100%;
-                @include prefixing(object-fit, cover);
-            }
-        }
     }
 
     &__wave {
@@ -116,6 +82,39 @@
         img {
             width: 100%;
             @include prefixing(object-fit, cover);
+        }
+
+        &__layer {
+            width: 50rem;
+            position: absolute;
+            left: -9rem;
+            top: -20rem;
+            z-index: 999;
+            @include prefixing(animation, top-bottom 3s ease-in-out 0s infinite normal both);
+            @include prefixing(animation-play-state, running);
+
+            @include breakpoint(tablet) {
+                display: none;
+            }
+
+            @media (min-width: 993px) and (max-width: 1129px) {
+                display: block;
+                left: -11rem;
+            }
+
+            @media (min-width: 1130px) and (max-width: 1170px) {
+                display: block;
+                left: -11rem;
+            }
+
+            // @media (min-width: 1372px) {
+            //     display: none;
+            // }
+
+            img {
+                width: 100%;
+                @include prefixing(object-fit, cover);
+            }
         }
     }
 }

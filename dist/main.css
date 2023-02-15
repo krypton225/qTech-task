@@ -563,7 +563,7 @@ a:active, a:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 0%;
-  background-image: url("../assets/images/landing-image.jpg");
+  background-image: url("../assets/images/landing-image.webp");
 }
 .landing .container {
   position: relative;
@@ -1128,7 +1128,7 @@ a:active, a:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../assets/images/who-us.png");
+  background-image: url("../assets/images/who-us.webp");
 }
 .who-us__logo {
   width: 15rem;
@@ -1551,7 +1551,7 @@ a:active, a:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url("../assets/images/contact-img.jpg");
+  background-image: url("../assets/images/contact-img.webp");
 }
 .contact__first::after {
   content: "";

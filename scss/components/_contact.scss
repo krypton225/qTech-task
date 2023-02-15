@@ -31,7 +31,7 @@
         position: relative;
         @include reset-bg;
         background-attachment: fixed;
-        background-image: url("../assets/images/contact-img.jpg");
+        background-image: url("../assets/images/contact-img.webp");
 
         &::after {
             content: "";
